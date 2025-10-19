@@ -8,6 +8,7 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Key Bindings](#key-bindings)
 - [Configuration Variables](#configuration-variables)
 - [Player Information](#player-information)
+- [Player State and Movement](#Player-State-and-Movement)
 - [Weapons](#weapons)
 - [Drawing](#drawing)
 - [ImGui Interface](#imgui-interface)
@@ -16,11 +17,28 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Extended Player Functions](#extended-player-functions)
 - [LagComp Functions](#lagcomp-functions)
 - [Ray Tracing](#ray-tracing)
+- [Prediction Functions](#Prediction-Functions)
 - [Vector Functions](#vector-functions)
 - [Time and Ticks](#time-and-ticks)
 - [Other Functions](#other-functions)
 
 ## Script Management
+
+### Script Control Functions
+### register_tab(name)
+Registers a new tab in the menu with the given name.
+
+### register_menu_element()
+Registers a custom menu element that will be rendered in the menu.
+
+### add_tab_content(tab_name)
+Adds content to the specified tab. The content is defined in a function named render_tab_<tab_name>.
+
+### wait(seconds)
+Pauses script execution for the specified number of seconds.
+
+### is_in_game() -> boolean
+Checks if the player is currently in a game.
 
 ### Binding Mode Constants
 
@@ -50,7 +68,46 @@ Returns the key code for the binding.
 ### get_bind_mode(bind_id) -> mode
 Returns the binding mode.
 
+### cheat_bind_exists(name) -> boolean
+Checks if a bind with the specified name exists.
+
+### cheat_create_bind(name, key, mode) -> boolean
+Creates a new bind with the given name, key code, and mode (0=None, 1=Hold, 2=Toggle). Returns true on success.
+
+### cheat_remove_bind(name) -> boolean
+Removes the bind with the specified name. Returns true on success.
+
+### cheat_set_bind_key(name, key) -> boolean
+Sets the key for the bind with the given name. Returns true on success.
+
+### cheat_set_bind_mode(name, mode) -> boolean
+Sets the mode for the bind with the given name. Returns true on success.
+
+### cheat_get_bind_key(name) -> key_code
+Returns the key code for the bind with the given name.
+
+### cheat_get_bind_mode(name) -> mode
+Returns the mode for the bind with the given name.
+
+### cheat_get_bind_state(name) -> boolean
+Returns the current state (active or not) of the bind with the given name.
+
+### cheat_get_all_binds() -> table
+Returns a table of all available bind names.
+
 ## Configuration Variables
+
+### create_bool(path, initial_value) -> boolean
+Creates a new boolean configuration variable at the specified path with the initial value. Returns true on success.
+
+### create_int(path, initial_value) -> boolean
+Creates a new integer configuration variable at the specified path with the initial value. Returns true on success.
+
+### create_float(path, initial_value) -> boolean
+Creates a new float configuration variable at the specified path with the initial value. Returns true on success.
+
+### create_color(path, r, g, b, a) -> boolean
+Creates a new color configuration variable at the specified path with the initial color. Returns true on success.
 
 ### set_bool(cvar_path, value)
 Sets a boolean value for a configuration variable.
@@ -80,6 +137,36 @@ Returns the color components of a configuration variable.
 Returns a table of all available configuration variables.
 
 ## Player Information
+
+### player:is_alive() -> boolean
+Checks if the player is alive.
+
+### player:is_dormant() -> boolean
+Checks if the player is dormant.
+
+### player:get_eye_angles() -> pitch, yaw, roll
+Returns the player's eye angles.
+
+### player:set_eye_angles(pitch, yaw, roll)
+Sets the player's eye angles.
+
+### player:set_base_velocity(x, y, z)
+Sets the player's base velocity.
+
+### player:set_fall_velocity(velocity)
+Sets the player's fall velocity.
+
+### player:set_view_offset(x, y, z)
+Sets the player's view offset.
+
+### player:set_abs_velocity(x, y, z)
+Sets the player's absolute velocity.
+
+### player:set_punch_angle(x, y, z)
+Sets the player's punch angle.
+
+### player:get_abs_velocity() -> x, y, z
+Returns the player's absolute velocity.
 
 ### get_local_player() -> player
 Returns the local player object.
@@ -123,7 +210,60 @@ Returns the player's movement type.
 ### player:get_simulation_time() -> number
 Returns the player's simulation time.
 
+## Player State and Movement
+
+### get_velocity() -> number
+Returns the local player's velocity magnitude.
+
+### get_fall_velocity() -> number
+Returns the local player's fall velocity.
+
+### get_local_origin() -> x, y, z
+Returns the local player's origin coordinates.
+
+### get_punch_angle() -> x, y, z
+Returns the local player's punch angle.
+
+### get_view_offset() -> x, y, z
+Returns the local player's view offset.
+
+### get_base_velocity() -> x, y, z
+Returns the local player's base velocity.
+
+### get_fire_bullets_spread() -> number
+Returns the fire bullets spread value.
+
+### get_accuracy() -> number
+Returns the local player's accuracy.
+
+### get_eye_position() -> x, y, z
+Returns the local player's eye position.
+
+### is_in_air() -> boolean
+Checks if the local player is in the air.
+
+### get_thirdperson_angles() -> x, y, z
+Returns the thirdperson angles.
+
+### set_thirdperson_angles(x, y, z)
+Sets the thirdperson angles.
+
+### get_global_velocity(player_index) -> x, y, z
+Returns the global velocity of the specified player.
+
 ## Weapons
+
+### weapon:get_weapon_id() -> integer
+Returns the weapon's ID.
+
+### weapon:get_weapon_name() -> string
+Returns the weapon's name.
+
+### weapon:is_ready_to_shoot() -> boolean
+Checks if the weapon is ready to shoot.
+
+### weapon:is_in_reload() -> boolean
+Checks if the weapon is currently reloading.
 
 ### weapon:get_clip1() -> integer
 Returns the number of bullets in the primary magazine.
@@ -144,6 +284,9 @@ Returns the time until the next possible primary fire attack.
 Returns the time until the next possible secondary fire attack.
 
 ## Drawing
+
+### get_text_width(text) -> width
+Returns the width of the text when drawn.
 
 ### world_to_screen(x, y, z) -> screen_x, screen_y, visible
 Converts 3D world coordinates to 2D screen coordinates.
@@ -306,6 +449,35 @@ Returns the index of the best lag compensation record for the specified player.
 
 ### trace_ray(start_x, start_y, start_z, end_x, end_y, end_z, mask) -> hit, fraction, entity_index
 Performs ray tracing in the game world and returns the result.
+
+## Prediction Functions
+
+### start_prediction() -> boolean
+Starts the prediction system. Returns true if successful.
+
+### end_prediction() -> boolean
+Ends the prediction system. Returns true if successful.
+
+### run_simulation() -> boolean
+Runs the simulation. Returns true if successful.
+
+### predict_origin(entity_index) -> x, y, z
+Predicts the origin of the specified entity.
+
+### update_player_history(entity_index) -> boolean
+Updates the player history for the specified entity. Returns true if successful.
+
+### get_predicted_origin(entity_index, ping) -> x, y, z
+Returns the predicted origin of the specified entity, adjusted for ping.
+
+### get_player_history(entity_index) -> x, y, z
+Returns the player history origin for the specified entity.
+
+### is_prediction_data_valid() -> boolean
+Checks if the prediction data is valid.
+
+### get_prediction_vars() -> table
+Returns a table containing prediction variables.
 
 ## Vector Functions
 
