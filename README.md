@@ -25,6 +25,8 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Other Functions](#other-functions)
 - [Logging Functions](#Logging-Functions)
 
+- If any offset is missing or something else (NetVar, ConVar, etc. like animstate), then use [Hooks](#Hooks) and the NetVars.txt/css_cvarlist.txt files
+
 ## Script Management
 
 ### Script Control Functions
