@@ -1,0 +1,3741 @@
+    CAI_BaseNPC - 0 
+    DT_WeaponCubemap 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	LocalWeaponData: 0x0 
+    	LocalActiveWeaponData: 0x0 
+    	m_iViewModelIndex: 0x888 
+    	m_iWorldModelIndex: 0x88c 
+    	m_iState: 0x8ac 
+    	m_hOwner: 0x870 
+     
+    CAK47 - 1 
+    DT_WeaponAK47 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CBaseAnimating - 2 
+    DT_BaseAnimating 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_flCycle: 0x7c8 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+     
+    CBaseAnimatingOverlay - 3 
+    DT_BaseAnimatingOverlay 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	overlay_vars: 0x0 
+    	m_AnimOverlay: 0x0 
+     
+    CBaseCombatCharacter - 4 
+    DT_BaseCombatCharacter 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_flexWeight: 0x918 
+    	m_blinktoggle: 0xac8 
+    	m_viewtarget: 0x8dc 
+    	bcc_localdata: 0x0 
+    	m_flNextAttack: 0xc38 
+    	m_hActiveWeapon: 0xd80 
+    	m_hMyWeapons: 0xcc0 
+     
+    CBaseCombatWeapon - 5 
+    DT_BaseCombatWeapon 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	LocalWeaponData: 0x0 
+    	m_iClip1: 0x8bc 
+    	m_iClip2: 0x8c0 
+    	m_iPrimaryAmmoType: 0x8b4 
+    	m_iSecondaryAmmoType: 0x8b8 
+    	m_nViewModelIndex: 0x874 
+    	m_bFlipViewModel: 0x8ec 
+    	LocalActiveWeaponData: 0x0 
+    	m_flNextPrimaryAttack: 0x878 
+    	m_flNextSecondaryAttack: 0x87c 
+    	m_nNextThinkTick: 0x88 
+    	m_flTimeWeaponIdle: 0x880 
+    	m_iViewModelIndex: 0x888 
+    	m_iWorldModelIndex: 0x88c 
+    	m_iState: 0x8ac 
+    	m_hOwner: 0x870 
+     
+    CBaseCSGrenade - 6 
+    DT_BaseCSGrenade 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_bRedraw: 0x968 
+    	m_bPinPulled: 0x969 
+    	m_fThrowTime: 0x96c 
+     
+    CBaseCSGrenadeProjectile - 7 
+    DT_BaseCSGrenadeProjectile 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_flDamage: 0x88c 
+    	m_DmgRadius: 0x87c 
+    	m_bIsLive: 0x879 
+    	m_hThrower: 0x894 
+    	m_vecVelocity: 0xf4 
+    	m_fFlags: 0x350 
+    	m_vInitialVelocity: 0x8a0 
+     
+    CBaseDoor - 8 
+    DT_BaseDoor 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flWaveHeight: 0x518 
+     
+    CBaseEntity - 9 
+    DT_BaseEntity 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flAnimTime: 0x64 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_vecMinsPreScaled: 0x8 
+    	m_vecMaxsPreScaled: 0x14 
+    	m_vecMins: 0x20 
+    	m_vecMaxs: 0x2c 
+    	m_nSolidType: 0x41 
+    	m_usSolidFlags: 0x3c 
+    	m_nSurroundType: 0x40 
+    	m_triggerBloat: 0x42 
+    	m_vecSpecifiedSurroundingMinsPreScaled: 0x44 
+    	m_vecSpecifiedSurroundingMaxsPreScaled: 0x50 
+    	m_vecSpecifiedSurroundingMins: 0x5c 
+    	m_vecSpecifiedSurroundingMaxs: 0x68 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_PredictableID: 0xa0 
+    	m_bIsPlayerSimulated: 0x4c8 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CBaseFlex - 10 
+    DT_BaseFlex 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	overlay_vars: 0x0 
+    	m_flexWeight: 0x918 
+    	m_blinktoggle: 0xac8 
+    	m_viewtarget: 0x8dc 
+     
+    CBaseGrenade - 11 
+    DT_BaseGrenade 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_hOriginalLauncher: 0x870 
+    	m_flDamage: 0x88c 
+    	m_DmgRadius: 0x87c 
+    	m_bIsLive: 0x879 
+    	m_hThrower: 0x894 
+    	m_vecVelocity: 0xf4 
+    	m_fFlags: 0x350 
+     
+    CBaseParticleEntity - 12 
+    DT_BaseParticleEntity 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CBasePlayer - 13 
+    DT_BasePlayer 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	bcc_localdata: 0x0 
+    	m_hActiveWeapon: 0xd80 
+    	m_hMyWeapons: 0xcc0 
+    	localdata: 0x0 
+    	m_Local: 0xddc 
+    	m_vecViewOffset[0]: 0xe8 
+    	m_vecViewOffset[1]: 0xec 
+    	m_vecViewOffset[2]: 0xf0 
+    	m_flFriction: 0x25c 
+    	m_iAmmo: 0xc40 
+    	m_fOnTarget: 0xfe8 
+    	m_nTickBase: 0x10ec 
+    	m_nNextThinkTick: 0x88 
+    	m_hLastWeapon: 0x1100 
+    	m_hGroundEntity: 0x254 
+    	m_vecVelocity[0]: 0xf4 
+    	m_vecVelocity[1]: 0xf8 
+    	m_vecVelocity[2]: 0xfc 
+    	m_vecBaseVelocity: 0x158 
+    	m_hConstraintEntity: 0x1020 
+    	m_vecConstraintCenter: 0x1024 
+    	m_flConstraintRadius: 0x1030 
+    	m_flConstraintWidth: 0x1034 
+    	m_flConstraintSpeedFactor: 0x1038 
+    	m_flDeathTime: 0x1060 
+    	m_nWaterLevel: 0x17c 
+    	m_flLaggedMovementValue: 0x123c 
+    	pl: 0xfc0 
+    	deadflag: 0x4 
+    	m_iFOV: 0xfd4 
+    	m_iFOVStart: 0xfd8 
+    	m_flFOVTime: 0xfdc 
+    	m_iDefaultFOV: 0xfe0 
+    	m_hZoomOwner: 0xfe4 
+    	m_hVehicle: 0x106c 
+    	m_hUseEntity: 0x1074 
+    	m_iHealth: 0x94 
+    	m_lifeState: 0x93 
+    	m_iBonusProgress: 0x107c 
+    	m_iBonusChallenge: 0x1080 
+    	m_flMaxspeed: 0x1078 
+    	m_fFlags: 0x350 
+    	m_iObserverMode: 0x103c 
+    	m_hObserverTarget: 0x1040 
+    	m_hViewModel[0]: 0x1118 
+    	m_hViewModel: 0x0 
+    	m_szLastPlaceName: 0x125c 
+     
+    CBaseProjectile - 14 
+    DT_BaseProjectile 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_hOriginalLauncher: 0x870 
+     
+    CBasePropDoor - 15 
+    DT_BasePropDoor 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bUseHitboxesForRenderBox: 0x870 
+     
+    CBaseTeamObjectiveResource - 16 
+    DT_BaseTeamObjectiveResource 
+    	m_iTimerToShowInHUD: 0x518 
+    	m_iStopWatchTimer: 0x51c 
+    	m_iNumControlPoints: 0x520 
+    	m_bPlayingMiniRounds: 0x528 
+    	m_bControlPointsReset: 0x529 
+    	m_iUpdateCapHudParity: 0x52c 
+    	m_vCPPositions[0]: 0x534 
+    	m_vCPPositions: 0x0 
+    	m_bCPIsVisible: 0x594 
+    	m_flLazyCapPerc: 0x59c 
+    	m_iTeamIcons: 0x5dc 
+    	m_iTeamOverlays: 0x6dc 
+    	m_iTeamReqCappers: 0x7dc 
+    	m_flTeamCapTime: 0x8dc 
+    	m_iPreviousPoints: 0x9dc 
+    	m_bTeamCanCap: 0xcdc 
+    	m_iTeamBaseIcons: 0xd1c 
+    	m_iBaseControlPoints: 0xd9c 
+    	m_bInMiniRound: 0xe1c 
+    	m_iWarnOnCap: 0xe24 
+    	m_iszWarnSound[0]: 0xe44 
+    	m_iszWarnSound: 0x0 
+    	m_flPathDistance: 0x163c 
+    	m_iCPGroup: 0x165c 
+    	m_bCPLocked: 0x167c 
+    	m_nNumNodeHillData: 0x190c 
+    	m_flNodeHillData: 0x191c 
+    	m_bTrackAlarm: 0x19d0 
+    	m_flUnlockTimes: 0x1684 
+    	m_bHillIsDownhill: 0x19d4 
+    	m_flCPTimerTimes: 0x16c4 
+    	m_iNumTeamMembers: 0x1704 
+    	m_iCappingTeam: 0x1804 
+    	m_iTeamInZone: 0x1824 
+    	m_bBlocked: 0x1844 
+    	m_iOwner: 0x184c 
+    	m_bCPCapRateScalesWithPlayers: 0x186c 
+    	m_pszCapLayoutInHUD: 0x18dc 
+    	m_flCustomPositionX: 0x1904 
+    	m_flCustomPositionY: 0x1908 
+     
+    CBaseTempEntity - 17 
+    CBaseViewModel - 18 
+    DT_BaseViewModel 
+    	m_nModelIndex: 0x90 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nSequence: 0x7c0 
+    	m_nViewModelIndex: 0x880 
+    	m_flPlaybackRate: 0x548 
+    	m_fEffects: 0x7c 
+    	m_nAnimationParity: 0x890 
+    	m_hWeapon: 0x8a0 
+    	m_hOwner: 0x884 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_flPoseParameter[0]: 0x624 
+    	m_flPoseParameter: 0x0 
+     
+    CBeam - 19 
+    DT_Beam 
+    	m_nBeamType: 0x534 
+    	m_nBeamFlags: 0x538 
+    	m_nNumBeamEnts: 0x528 
+    	m_hAttachEntity: 0x53c 
+    	m_nAttachIndex: 0x564 
+    	m_nHaloIndex: 0x530 
+    	m_fHaloScale: 0x598 
+    	m_fWidth: 0x58c 
+    	m_fEndWidth: 0x590 
+    	m_fFadeLength: 0x594 
+    	m_fAmplitude: 0x59c 
+    	m_fStartFrame: 0x5a0 
+    	m_fSpeed: 0x5a4 
+    	m_flFrameRate: 0x518 
+    	m_flHDRColorScale: 0x51c 
+    	m_clrRender: 0x5c 
+    	m_nRenderFX: 0x58 
+    	m_nRenderMode: 0x80 
+    	m_flFrame: 0x5ac 
+    	m_vecEndPos: 0x5b0 
+    	m_nModelIndex: 0x90 
+    	m_nMinDXLevel: 0x5a8 
+    	m_vecOrigin: 0x338 
+    	moveparent: 0x190 
+    	beampredictable_id: 0x0 
+    	m_PredictableID: 0xa0 
+    	m_bIsPlayerSimulated: 0x4c8 
+     
+    CBoneFollower - 20 
+    DT_BoneFollower 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_modelIndex: 0x518 
+    	m_solidIndex: 0x51c 
+     
+    CBreakableProp - 21 
+    DT_BreakableProp 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+     
+    CBreakableSurface - 22 
+    DT_BreakableSurface 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_nNumWide: 0x51c 
+    	m_nNumHigh: 0x520 
+    	m_flPanelWidth: 0x524 
+    	m_flPanelHeight: 0x528 
+    	m_vNormal: 0x52c 
+    	m_vCorner: 0x538 
+    	m_bIsBroken: 0x544 
+    	m_nSurfaceType: 0x548 
+    	m_RawPanelBitVec: 0x56c 
+     
+    CC4 - 23 
+    DT_WeaponC4 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_bStartedArming: 0x988 
+    	m_bBombPlacedAnimation: 0x990 
+    	m_fArmedTime: 0x98c 
+     
+    CColorCorrection - 24 
+    DT_ColorCorrection 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_vecOrigin: 0x518 
+    	m_minFalloff: 0x524 
+    	m_maxFalloff: 0x528 
+    	m_flCurWeight: 0x52c 
+    	m_netLookupFilename: 0x530 
+    	m_bEnabled: 0x634 
+     
+    CColorCorrectionVolume - 25 
+    DT_ColorCorrectionVolume 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_Weight: 0x518 
+    	m_lookupFilename: 0x51c 
+     
+    CCSGameRulesProxy - 26 
+    DT_CSGameRulesProxy 
+    	baseclass: 0x0 
+    	cs_gamerules_data: 0x0 
+    	m_bFreezePeriod: 0x20 
+    	m_iRoundTime: 0x24 
+    	m_fRoundStartTime: 0x28 
+    	m_flGameStartTime: 0x2c 
+    	m_iHostagesRemaining: 0x30 
+    	m_bMapHasBombTarget: 0x34 
+    	m_bMapHasRescueZone: 0x35 
+    	m_bLogoMap: 0x36 
+    	m_bBlackMarket: 0x37 
+     
+    CCSPlayer - 27 
+    DT_CSPlayer 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	localdata: 0x0 
+    	pl: 0xfc0 
+    	m_iFOV: 0xfd4 
+    	m_iFOVStart: 0xfd8 
+    	m_flFOVTime: 0xfdc 
+    	m_iDefaultFOV: 0xfe0 
+    	m_hZoomOwner: 0xfe4 
+    	m_hVehicle: 0x106c 
+    	m_hUseEntity: 0x1074 
+    	m_iHealth: 0x94 
+    	m_lifeState: 0x93 
+    	m_iBonusProgress: 0x107c 
+    	m_iBonusChallenge: 0x1080 
+    	m_flMaxspeed: 0x1078 
+    	m_fFlags: 0x350 
+    	m_iObserverMode: 0x103c 
+    	m_hObserverTarget: 0x1040 
+    	m_hViewModel[0]: 0x1118 
+    	m_hViewModel: 0x0 
+    	m_szLastPlaceName: 0x125c 
+    	cslocaldata: 0x0 
+    	m_flStamina: 0x1428 
+    	m_iDirection: 0x142c 
+    	m_iShotsFired: 0x1430 
+    	m_flVelocityModifier: 0x1438 
+    	m_vecOrigin: 0x338 
+    	m_bPlayerDominated: 0x1578 
+    	m_bPlayerDominatingMe: 0x15ba 
+    	csnonlocaldata: 0x0 
+    	m_vecOrigin: 0x338 
+    	m_iAddonBits: 0x1414 
+    	m_iPrimaryAddon: 0x1418 
+    	m_iSecondaryAddon: 0x141c 
+    	m_iThrowGrenadeCounter: 0x1410 
+    	m_iPlayerState: 0x1408 
+    	m_iAccount: 0x148c 
+    	m_bInBombZone: 0x140d 
+    	m_bInBuyZone: 0x140e 
+    	m_iClass: 0x1494 
+    	m_ArmorValue: 0x1498 
+    	m_angEyeAngles[0]: 0x149c 
+    	m_angEyeAngles[1]: 0x14a0 
+    	m_flStamina: 0x1428 
+    	m_bHasDefuser: 0x14a8 
+    	m_bNightVisionOn: 0x1434 
+    	m_bHasNightVision: 0x1435 
+    	m_bInHostageRescueZone: 0x14a9 
+    	m_ArmorValue: 0x1498 
+    	m_bIsDefusing: 0x140c 
+    	m_bResumeZoom: 0x1400 
+    	m_iLastZoom: 0x1404 
+    	m_bHasHelmet: 0x1490 
+    	m_vecRagdollVelocity: 0x14b4 
+    	m_flFlashDuration: 0x1454 
+    	m_flFlashMaxAlpha: 0x1450 
+    	m_iProgressBarDuration: 0x1420 
+    	m_flProgressBarStartTime: 0x1424 
+    	m_hRagdoll: 0x1440 
+    	m_cycleLatch: 0x1570 
+     
+    CCSPlayerResource - 28 
+    DT_CSPlayerResource 
+    	baseclass: 0x0 
+    	m_iPing: 0x624 
+    	m_iScore: 0x72c 
+    	m_iDeaths: 0x834 
+    	m_bConnected: 0x93c 
+    	m_iTeam: 0x980 
+    	m_bAlive: 0xa88 
+    	m_iHealth: 0xacc 
+    	m_iPlayerC4: 0xc58 
+    	m_iPlayerVIP: 0xc5c 
+    	m_vecC4: 0xc60 
+    	m_bHostageAlive: 0xc84 
+    	m_isHostageFollowingSomeone: 0xc90 
+    	m_iHostageEntityIDs: 0xc9c 
+    	m_iHostageX: 0xccc 
+    	m_iHostageY: 0xcfc 
+    	m_iHostageZ: 0xd2c 
+    	m_bombsiteCenterA: 0xc6c 
+    	m_bombsiteCenterB: 0xc78 
+    	m_hostageRescueX: 0xd5c 
+    	m_hostageRescueY: 0xd6c 
+    	m_hostageRescueZ: 0xd7c 
+    	m_bBombSpotted: 0xd8c 
+    	m_bPlayerSpotted: 0xd8d 
+    	m_iMVPs: 0x12f8 
+    	m_bHasDefuser: 0x1400 
+    	m_szClan: 0xed8 
+     
+    CCSRagdoll - 29 
+    DT_CSRagdoll 
+    	m_vecOrigin: 0x338 
+    	m_vecRagdollOrigin: 0x8e8 
+    	m_hPlayer: 0x8d8 
+    	m_nModelIndex: 0x90 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_vecRagdollVelocity: 0x8dc 
+    	m_iDeathPose: 0x8f4 
+    	m_iDeathFrame: 0x8f8 
+    	m_iTeamNum: 0x9c 
+    	m_bClientSideAnimation: 0x790 
+     
+    CCSTeam - 30 
+    DT_CSTeam 
+    	baseclass: 0x0 
+    	m_iTeamNum: 0x560 
+    	m_iScore: 0x54c 
+    	m_iRoundsWon: 0x550 
+    	m_szTeamname: 0x52c 
+    	player_array_element: 0x0 
+    	"player_array": 0x0 
+     
+    CDEagle - 31 
+    DT_WeaponDEagle 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CDynamicLight - 32 
+    DT_DynamicLight 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_Flags: 0x518 
+    	m_LightStyle: 0x519 
+    	m_Radius: 0x51c 
+    	m_Exponent: 0x520 
+    	m_InnerAngle: 0x524 
+    	m_OuterAngle: 0x528 
+    	m_SpotRadius: 0x52c 
+     
+    CDynamicProp - 33 
+    DT_DynamicProp 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bUseHitboxesForRenderBox: 0x870 
+     
+    CEmbers - 34 
+    DT_Embers 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_nDensity: 0x518 
+    	m_nLifetime: 0x51c 
+    	m_nSpeed: 0x520 
+    	m_bEmit: 0x524 
+     
+    CEntityDissolve - 35 
+    DT_EntityDissolve 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flStartTime: 0x51c 
+    	m_flFadeOutStart: 0x520 
+    	m_flFadeOutLength: 0x524 
+    	m_flFadeOutModelStart: 0x528 
+    	m_flFadeOutModelLength: 0x52c 
+    	m_flFadeInStart: 0x530 
+    	m_flFadeInLength: 0x534 
+    	m_nDissolveType: 0x538 
+    	m_vDissolverOrigin: 0x54c 
+    	m_nMagnitude: 0x558 
+     
+    CEntityFlame - 36 
+    DT_EntityFlame 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_hEntAttached: 0x51c 
+     
+    CEntityParticleTrail - 37 
+    DT_EntityParticleTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_iMaterialName: 0x600 
+    	m_Info: 0x604 
+    	m_flLifetime: 0x8 
+    	m_flStartSize: 0xc 
+    	m_flEndSize: 0x10 
+    	m_hConstraintEntity: 0x618 
+     
+    CEnvDetailController - 38 
+    DT_DetailController 
+    	m_flFadeStartDist: 0x518 
+    	m_flFadeEndDist: 0x51c 
+     
+    CEnvParticleScript - 39 
+    DT_EnvParticleScript 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_flSequenceScale: 0x954 
+     
+    CEnvProjectedTexture - 40 
+    DT_EnvProjectedTexture 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_hTargetEntity: 0x51c 
+    	m_bState: 0x520 
+    	m_flLightFOV: 0x524 
+    	m_bEnableShadows: 0x528 
+    	m_bLightOnlyTarget: 0x529 
+    	m_bLightWorld: 0x52a 
+    	m_bCameraSpace: 0x52b 
+    	m_LinearFloatLightColor: 0x52c 
+    	m_flAmbient: 0x538 
+    	m_SpotlightTextureName: 0x544 
+    	m_nSpotlightTextureFrame: 0x648 
+    	m_flNearZ: 0x53c 
+    	m_flFarZ: 0x540 
+    	m_nShadowQuality: 0x64c 
+     
+    CEnvQuadraticBeam - 41 
+    DT_QuadraticBeam 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_targetPosition: 0x518 
+    	m_controlPosition: 0x524 
+    	m_scrollRate: 0x530 
+    	m_flWidth: 0x534 
+     
+    CEnvScreenEffect - 42 
+    DT_EnvScreenEffect 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flDuration: 0x518 
+    	m_nType: 0x51c 
+     
+    CEnvScreenOverlay - 43 
+    DT_EnvScreenOverlay 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_iszOverlayNames[0]: 0x518 
+    	m_iszOverlayNames: 0x0 
+    	m_flOverlayTimes[0]: 0xf10 
+    	m_flOverlayTimes: 0x0 
+    	m_flStartTime: 0xf38 
+    	m_iDesiredOverlay: 0xf3c 
+    	m_bIsActive: 0xf40 
+     
+    CEnvTonemapController - 44 
+    DT_EnvTonemapController 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_bUseCustomAutoExposureMin: 0x518 
+    	m_bUseCustomAutoExposureMax: 0x519 
+    	m_bUseCustomBloomScale: 0x51a 
+    	m_flCustomAutoExposureMin: 0x51c 
+    	m_flCustomAutoExposureMax: 0x520 
+    	m_flCustomBloomScale: 0x524 
+    	m_flCustomBloomScaleMinimum: 0x528 
+     
+    CEnvWind - 45 
+    DT_EnvWind 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_EnvWindShared: 0x518 
+    	m_iMinWind: 0xc 
+    	m_iMaxWind: 0x10 
+    	m_iMinGust: 0x14 
+    	m_iMaxGust: 0x18 
+    	m_flMinGustDelay: 0x1c 
+    	m_flMaxGustDelay: 0x20 
+    	m_iGustDirChange: 0x28 
+    	m_iWindSeed: 0x8 
+    	m_iInitialWindDir: 0x38 
+    	m_flInitialWindSpeed: 0x3c 
+    	m_flStartTime: 0x4 
+    	m_flGustDuration: 0x24 
+     
+    CFireSmoke - 46 
+    DT_FireSmoke 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flStartScale: 0x518 
+    	m_flScale: 0x51c 
+    	m_flScaleTime: 0x520 
+    	m_nFlags: 0x524 
+    	m_nFlameModelIndex: 0x528 
+    	m_nFlameFromAboveModelIndex: 0x52c 
+     
+    CFireTrail - 47 
+    DT_FireTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nAttachment: 0x604 
+    	m_flLifetime: 0x608 
+     
+    CFish - 48 
+    DT_CFish 
+    	m_poolOrigin: 0x8d0 
+    	m_x: 0x8b8 
+    	m_y: 0x8bc 
+    	m_z: 0x8c0 
+    	m_angle: 0x8c8 
+    	m_nModelIndex: 0x90 
+    	m_lifeState: 0x93 
+    	m_waterLevel: 0x8dc 
+     
+    CFlashbang - 49 
+    DT_Flashbang 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bRedraw: 0x968 
+    	m_bPinPulled: 0x969 
+    	m_fThrowTime: 0x96c 
+     
+    CFogController - 50 
+    DT_FogController 
+    	m_fog.enable: 0x558 
+    	m_fog.blend: 0x559 
+    	m_fog.dirPrimary: 0x51c 
+    	m_fog.colorPrimary: 0x528 
+    	m_fog.colorSecondary: 0x52c 
+    	m_fog.start: 0x538 
+    	m_fog.end: 0x53c 
+    	m_fog.farz: 0x540 
+    	m_fog.maxdensity: 0x544 
+    	m_fog.colorPrimaryLerpTo: 0x530 
+    	m_fog.colorSecondaryLerpTo: 0x534 
+    	m_fog.startLerpTo: 0x548 
+    	m_fog.endLerpTo: 0x54c 
+    	m_fog.lerptime: 0x550 
+    	m_fog.duration: 0x554 
+     
+    CFootstepControl - 51 
+    DT_FootstepControl 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_source: 0x518 
+    	m_destination: 0x528 
+     
+    CFunc_Dust - 52 
+    DT_Func_Dust 
+    	m_Color: 0x518 
+    	m_SpawnRate: 0x51c 
+    	m_flSizeMin: 0x520 
+    	m_flSizeMax: 0x524 
+    	m_LifetimeMin: 0x52c 
+    	m_LifetimeMax: 0x530 
+    	m_DustFlags: 0x53c 
+    	m_SpeedMax: 0x528 
+    	m_DistMax: 0x534 
+    	m_nModelIndex: 0x90 
+    	m_FallSpeed: 0x538 
+    	m_Collision: 0x19c 
+    	m_vecMinsPreScaled: 0x8 
+    	m_vecMaxsPreScaled: 0x14 
+    	m_vecMins: 0x20 
+    	m_vecMaxs: 0x2c 
+    	m_nSolidType: 0x41 
+    	m_usSolidFlags: 0x3c 
+    	m_nSurroundType: 0x40 
+    	m_triggerBloat: 0x42 
+    	m_vecSpecifiedSurroundingMinsPreScaled: 0x44 
+    	m_vecSpecifiedSurroundingMaxsPreScaled: 0x50 
+    	m_vecSpecifiedSurroundingMins: 0x5c 
+    	m_vecSpecifiedSurroundingMaxs: 0x68 
+     
+    CFunc_LOD - 53 
+    DT_Func_LOD 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_fDisappearDist: 0x518 
+     
+    CFuncAreaPortalWindow - 54 
+    DT_FuncAreaPortalWindow 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flFadeStartDist: 0x518 
+    	m_flFadeDist: 0x51c 
+    	m_flTranslucencyLimit: 0x520 
+    	m_iBackgroundModelIndex: 0x524 
+     
+    CFuncConveyor - 55 
+    DT_FuncConveyor 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flConveyorSpeed: 0x518 
+     
+    CFuncLadder - 56 
+    DT_FuncLadder 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_vecPlayerMountPositionTop: 0x538 
+    	m_vecPlayerMountPositionBottom: 0x544 
+    	m_vecLadderDir: 0x518 
+    	m_bFakeLadder: 0x551 
+     
+    CFuncMonitor - 57 
+    DT_FuncMonitor 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CFuncOccluder - 58 
+    DT_FuncOccluder 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_bActive: 0x51c 
+    	m_nOccluderIndex: 0x518 
+     
+    CFuncReflectiveGlass - 59 
+    DT_FuncReflectiveGlass 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CFuncRotating - 60 
+    DT_FuncRotating 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_vecOrigin: 0x338 
+    	m_angRotation[0]: 0x344 
+    	m_angRotation[1]: 0x348 
+    	m_angRotation[2]: 0x34c 
+    	m_flSimulationTime: 0x6c 
+     
+    CFuncSmokeVolume - 61 
+    DT_FuncSmokeVolume 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_Color1: 0x604 
+    	m_Color2: 0x608 
+    	m_MaterialName: 0x60c 
+    	m_ParticleDrawWidth: 0x70c 
+    	m_ParticleSpacingDistance: 0x710 
+    	m_DensityRampSpeed: 0x714 
+    	m_RotationSpeed: 0x718 
+    	m_MovementSpeed: 0x71c 
+    	m_Density: 0x720 
+    	m_spawnflags: 0x724 
+    	m_Collision: 0x19c 
+    	m_vecMinsPreScaled: 0x8 
+    	m_vecMaxsPreScaled: 0x14 
+    	m_vecMins: 0x20 
+    	m_vecMaxs: 0x2c 
+    	m_nSolidType: 0x41 
+    	m_usSolidFlags: 0x3c 
+    	m_nSurroundType: 0x40 
+    	m_triggerBloat: 0x42 
+    	m_vecSpecifiedSurroundingMinsPreScaled: 0x44 
+    	m_vecSpecifiedSurroundingMaxsPreScaled: 0x50 
+    	m_vecSpecifiedSurroundingMins: 0x5c 
+    	m_vecSpecifiedSurroundingMaxs: 0x68 
+     
+    CFuncTrackTrain - 62 
+    DT_FuncTrackTrain 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CGameRulesProxy - 63 
+    CHandleTest - 64 
+    DT_HandleTest 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_Handle: 0x518 
+    	m_bSendHandle: 0x51c 
+     
+    CHEGrenade - 65 
+    DT_HEGrenade 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bRedraw: 0x968 
+    	m_bPinPulled: 0x969 
+    	m_fThrowTime: 0x96c 
+     
+    CHostage - 66 
+    DT_CHostage 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	bcc_localdata: 0x0 
+    	m_hActiveWeapon: 0xd80 
+    	m_hMyWeapons: 0xcc0 
+    	m_isRescued: 0xd9c 
+    	m_iHealth: 0x94 
+    	m_iMaxHealth: 0xd90 
+    	m_lifeState: 0x93 
+    	m_leader: 0xd98 
+     
+    CInfoLadderDismount - 67 
+    DT_InfoLadderDismount 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+     
+    CInfoLightingRelative - 68 
+    DT_InfoLightingRelative 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_hLightingLandmark: 0x518 
+     
+    CInfoOverlayAccessor - 69 
+    DT_InfoOverlayAccessor 
+    	m_iTextureFrameIndex: 0x4cc 
+    	m_iOverlayID: 0x518 
+     
+    CKnife - 70 
+    DT_WeaponKnife 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	LocalActiveWeaponKnifeData: 0x0 
+    	m_flSmackTime: 0x9c0 
+     
+    CLightGlow - 71 
+    DT_LightGlow 
+    	m_clrRender: 0x5c 
+    	m_nHorizontalSize: 0x518 
+    	m_nVerticalSize: 0x51c 
+    	m_nMinDist: 0x520 
+    	m_nMaxDist: 0x524 
+    	m_nOuterMaxDist: 0x528 
+    	m_spawnflags: 0x52c 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	moveparent: 0x190 
+    	m_flGlowProxySize: 0x5fc 
+    	HDRColorScale: 0x0 
+     
+    CMaterialModifyControl - 72 
+    DT_MaterialModifyControl 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_szMaterialName: 0x518 
+    	m_szMaterialVar: 0x617 
+    	m_szMaterialVarValue: 0x716 
+    	m_iFrameStart: 0x820 
+    	m_iFrameEnd: 0x824 
+    	m_bWrap: 0x828 
+    	m_flFramerate: 0x82c 
+    	m_bNewAnimCommandsSemaphore: 0x830 
+    	m_flFloatLerpStartValue: 0x834 
+    	m_flFloatLerpEndValue: 0x838 
+    	m_flFloatLerpTransitionTime: 0x83c 
+    	m_bFloatLerpWrap: 0x840 
+    	m_nModifyMode: 0x848 
+     
+    CParticleFire - 73 
+    DT_ParticleFire 
+    	m_vOrigin: 0x60c 
+    	m_vDirection: 0x618 
+     
+    CParticlePerformanceMonitor - 74 
+    DT_ParticlePerformanceMonitor 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_bMeasurePerf: 0x519 
+    	m_bDisplayPerf: 0x518 
+     
+    CParticleSystem - 75 
+    DT_ParticleSystem 
+    	m_vecOrigin: 0x338 
+    	m_hOwnerEntity: 0x4d8 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	m_angRotation: 0x344 
+    	m_iEffectIndex: 0x518 
+    	m_bActive: 0x51c 
+    	m_flStartTime: 0x520 
+    	m_hControlPointEnts: 0x524 
+    	m_iControlPointParents: 0x620 
+    	m_bWeatherEffect: 0x65f 
+     
+    CPhysBox - 76 
+    DT_PhysBox 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_mass: 0x518 
+     
+    CPhysBoxMultiplayer - 77 
+    DT_PhysBoxMultiplayer 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_mass: 0x518 
+    	m_iPhysicsMode: 0x524 
+    	m_fMass: 0x528 
+     
+    CPhysicsProp - 78 
+    DT_PhysicsProp 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bAwake: 0x870 
+     
+    CPhysicsPropMultiplayer - 79 
+    DT_PhysicsPropMultiplayer 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bAwake: 0x870 
+    	m_iPhysicsMode: 0x87c 
+    	m_fMass: 0x880 
+    	m_collisionMins: 0x884 
+    	m_collisionMaxs: 0x890 
+     
+    CPhysMagnet - 80 
+    DT_PhysMagnet 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+     
+    CPlantedC4 - 81 
+    DT_PlantedC4 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_bBombTicking: 0x870 
+    	m_flC4Blow: 0x87c 
+    	m_flTimerLength: 0x880 
+    	m_flDefuseLength: 0x884 
+    	m_flDefuseCountDown: 0x888 
+     
+    CPlasma - 82 
+    DT_Plasma 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flStartScale: 0x518 
+    	m_flScale: 0x51c 
+    	m_flScaleTime: 0x520 
+    	m_nFlags: 0x524 
+    	m_nPlasmaModelIndex: 0x528 
+    	m_nPlasmaModelIndex2: 0x52c 
+    	m_nGlowModelIndex: 0x530 
+     
+    CPlayerResource - 83 
+    DT_PlayerResource 
+    	m_iPing: 0x624 
+    	m_iScore: 0x72c 
+    	m_iDeaths: 0x834 
+    	m_bConnected: 0x93c 
+    	m_iTeam: 0x980 
+    	m_bAlive: 0xa88 
+    	m_iHealth: 0xacc 
+     
+    CPointCamera - 84 
+    DT_PointCamera 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_FOV: 0x518 
+    	m_Resolution: 0x51c 
+    	m_bFogEnable: 0x520 
+    	m_FogColor: 0x521 
+    	m_flFogStart: 0x528 
+    	m_flFogEnd: 0x52c 
+    	m_flFogMaxDensity: 0x530 
+    	m_bActive: 0x534 
+    	m_bUseScreenAspectRatio: 0x535 
+     
+    CPointCommentaryNode - 85 
+    DT_PointCommentaryNode 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_bActive: 0x870 
+    	m_flStartTime: 0x874 
+    	m_iszCommentaryFile: 0x878 
+    	m_iszCommentaryFileNoHDR: 0x97c 
+    	m_iszSpeakers: 0xa80 
+    	m_iNodeNumber: 0xb80 
+    	m_iNodeNumberMax: 0xb84 
+    	m_hViewPosition: 0xb8c 
+     
+    CPoseController - 86 
+    DT_PoseController 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_hProps: 0x518 
+    	m_chPoseIndex: 0x528 
+    	m_bPoseValueParity: 0x52c 
+    	m_fPoseValue: 0x530 
+    	m_fInterpolationTime: 0x534 
+    	m_bInterpolationWrap: 0x538 
+    	m_fCycleFrequency: 0x53c 
+    	m_nFModType: 0x540 
+    	m_fFModTimeOffset: 0x544 
+    	m_fFModRate: 0x548 
+    	m_fFModAmplitude: 0x54c 
+     
+    CPrecipitation - 87 
+    DT_Precipitation 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_nPrecipType: 0x540 
+     
+    CPredictedViewModel - 88 
+    DT_PredictedViewModel 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x90 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nSequence: 0x7c0 
+    	m_nViewModelIndex: 0x880 
+    	m_flPlaybackRate: 0x548 
+    	m_fEffects: 0x7c 
+    	m_nAnimationParity: 0x890 
+    	m_hWeapon: 0x8a0 
+    	m_hOwner: 0x884 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_flPoseParameter[0]: 0x624 
+    	m_flPoseParameter: 0x0 
+     
+    CPropJeep - 89 
+    DT_PropJeep 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_hPlayer: 0x874 
+    	m_nSpeed: 0x878 
+    	m_nRPM: 0x87c 
+    	m_flThrottle: 0x880 
+    	m_nBoostTimeLeft: 0x884 
+    	m_nHasBoost: 0x888 
+    	m_nScannerDisabledWeapons: 0x88c 
+    	m_nScannerDisabledVehicle: 0x890 
+    	m_bEnterAnimOn: 0x8b0 
+    	m_bExitAnimOn: 0x8b1 
+    	m_bUnableToFire: 0x901 
+    	m_vecEyeExitEndpoint: 0x8f4 
+    	m_bHasGun: 0x900 
+    	m_vecGunCrosshair: 0x8b8 
+    	m_bHeadlightIsOn: 0x9bc 
+     
+    CPropVehicleDriveable - 90 
+    DT_PropVehicleDriveable 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_hPlayer: 0x874 
+    	m_nSpeed: 0x878 
+    	m_nRPM: 0x87c 
+    	m_flThrottle: 0x880 
+    	m_nBoostTimeLeft: 0x884 
+    	m_nHasBoost: 0x888 
+    	m_nScannerDisabledWeapons: 0x88c 
+    	m_nScannerDisabledVehicle: 0x890 
+    	m_bEnterAnimOn: 0x8b0 
+    	m_bExitAnimOn: 0x8b1 
+    	m_bUnableToFire: 0x901 
+    	m_vecEyeExitEndpoint: 0x8f4 
+    	m_bHasGun: 0x900 
+    	m_vecGunCrosshair: 0x8b8 
+     
+    CRagdollManager - 91 
+    DT_RagdollManager 
+    	m_iCurrentMaxRagdollCount: 0x518 
+     
+    CRagdollProp - 92 
+    DT_Ragdoll 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+    	m_ragAngles[0]: 0x990 
+    	m_ragAngles: 0x0 
+    	m_ragPos[0]: 0x870 
+    	m_ragPos: 0x0 
+    	m_hUnragdoll: 0xb74 
+    	m_flBlendWeight: 0xb78 
+    	m_nOverlaySequence: 0xb80 
+     
+    CRagdollPropAttached - 93 
+    DT_Ragdoll_Attached 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_ragAngles[0]: 0x990 
+    	m_ragAngles: 0x0 
+    	m_ragPos[0]: 0x870 
+    	m_ragPos: 0x0 
+    	m_hUnragdoll: 0xb74 
+    	m_flBlendWeight: 0xb78 
+    	m_nOverlaySequence: 0xb80 
+    	m_boneIndexAttached: 0xbb0 
+    	m_ragdollAttachedObjectIndex: 0xbac 
+    	m_attachmentPointBoneSpace: 0xb88 
+    	m_attachmentPointRagdollSpace: 0xba0 
+     
+    CRopeKeyframe - 94 
+    DT_RopeKeyframe 
+    	m_iRopeMaterialModelIndex: 0x554 
+    	m_hStartPoint: 0x7e4 
+    	m_hEndPoint: 0x7e8 
+    	m_iStartAttachment: 0x7ec 
+    	m_iEndAttachment: 0x7ee 
+    	m_fLockedPoints: 0x800 
+    	m_Slack: 0x7f8 
+    	m_RopeLength: 0x7f4 
+    	m_RopeFlags: 0x550 
+    	m_TextureScale: 0x7fc 
+    	m_nSegments: 0x7e0 
+    	m_bConstrainBetweenEndpoints: 0x888 
+    	m_Subdiv: 0x7f0 
+    	m_Width: 0x804 
+    	m_flScrollSpeed: 0x54c 
+    	m_vecOrigin: 0x338 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+     
+    CSceneEntity - 95 
+    DT_SceneEntity 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_nSceneStringIndex: 0x528 
+    	m_bIsPlayingBack: 0x51c 
+    	m_bPaused: 0x51d 
+    	m_bMultiplayer: 0x51e 
+    	m_flForceClientTime: 0x524 
+    	m_hActorList: 0x0 
+    	lengthproxy: 0x0 
+     
+    CShadowControl - 96 
+    DT_ShadowControl 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_shadowDirection: 0x518 
+    	m_shadowColor: 0x524 
+    	m_flShadowMaxDist: 0x528 
+    	m_bDisableShadows: 0x52c 
+     
+    CSlideshowDisplay - 97 
+    DT_SlideshowDisplay 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_bEnabled: 0x518 
+    	m_szDisplayText: 0x519 
+    	m_szSlideshowDirectory: 0x599 
+    	m_chCurrentSlideLists: 0x630 
+    	m_fMinSlideTime: 0x648 
+    	m_fMaxSlideTime: 0x64c 
+    	m_iCycleType: 0x654 
+    	m_bNoListRepeats: 0x658 
+     
+    CSmokeGrenade - 98 
+    DT_SmokeGrenade 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bRedraw: 0x968 
+    	m_bPinPulled: 0x969 
+    	m_fThrowTime: 0x96c 
+     
+    CSmokeStack - 99 
+    DT_SmokeStack 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_SpreadSpeed: 0x654 
+    	m_Speed: 0x658 
+    	m_StartSize: 0x65c 
+    	m_EndSize: 0x660 
+    	m_Rate: 0x664 
+    	m_JetLength: 0x668 
+    	m_bEmit: 0x66c 
+    	m_flBaseSpread: 0x670 
+    	m_flTwist: 0x6c4 
+    	m_flRollSpeed: 0x700 
+    	m_iMaterialModel: 0x6c8 
+    	m_AmbientLight.m_vPos: 0x674 
+    	m_AmbientLight.m_vColor: 0x680 
+    	m_AmbientLight.m_flIntensity: 0x68c 
+    	m_DirLight.m_vPos: 0x690 
+    	m_DirLight.m_vColor: 0x69c 
+    	m_DirLight.m_flIntensity: 0x6a8 
+    	m_vWind: 0x6b8 
+     
+    CSpotlightEnd - 100 
+    DT_SpotlightEnd 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flLightScale: 0x518 
+    	m_Radius: 0x51c 
+     
+    CSprite - 101 
+    DT_Sprite 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_hAttachedToEntity: 0x528 
+    	m_nAttachment: 0x52c 
+    	m_flScaleTime: 0x548 
+    	m_flSpriteScale: 0x544 
+    	m_flSpriteFramerate: 0x530 
+    	m_flGlowProxySize: 0x550 
+    	m_flHDRColorScale: 0x554 
+    	m_flFrame: 0x534 
+    	m_flBrightnessTime: 0x540 
+    	m_nBrightness: 0x53c 
+    	m_bWorldSpaceScale: 0x54c 
+     
+    CSpriteOriented - 102 
+    DT_SpriteOriented 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_hAttachedToEntity: 0x528 
+    	m_nAttachment: 0x52c 
+    	m_flScaleTime: 0x548 
+    	m_flSpriteScale: 0x544 
+    	m_flSpriteFramerate: 0x530 
+    	m_flGlowProxySize: 0x550 
+    	m_flHDRColorScale: 0x554 
+    	m_flFrame: 0x534 
+    	m_flBrightnessTime: 0x540 
+    	m_nBrightness: 0x53c 
+    	m_bWorldSpaceScale: 0x54c 
+     
+    CSpriteTrail - 103 
+    DT_SpriteTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_hAttachedToEntity: 0x528 
+    	m_nAttachment: 0x52c 
+    	m_flScaleTime: 0x548 
+    	m_flSpriteScale: 0x544 
+    	m_flSpriteFramerate: 0x530 
+    	m_flGlowProxySize: 0x550 
+    	m_flHDRColorScale: 0x554 
+    	m_flFrame: 0x534 
+    	m_flBrightnessTime: 0x540 
+    	m_nBrightness: 0x53c 
+    	m_bWorldSpaceScale: 0x54c 
+    	m_flLifeTime: 0x1dac 
+    	m_flStartWidth: 0x1db0 
+    	m_flEndWidth: 0x1db4 
+    	m_flStartWidthVariance: 0x1db8 
+    	m_flTextureRes: 0x1dbc 
+    	m_flMinFadeLength: 0x1dc0 
+    	m_vecSkyboxOrigin: 0x1dc4 
+    	m_flSkyboxScale: 0x1dd0 
+     
+    CSteamJet - 104 
+    DT_SteamJet 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_SpreadSpeed: 0x604 
+    	m_Speed: 0x608 
+    	m_StartSize: 0x60c 
+    	m_EndSize: 0x610 
+    	m_Rate: 0x614 
+    	m_JetLength: 0x618 
+    	m_bEmit: 0x61c 
+    	m_bFaceLeft: 0x624 
+    	m_nType: 0x620 
+    	m_spawnflags: 0x628 
+    	m_flRollSpeed: 0x62c 
+     
+    CSun - 105 
+    DT_Sun 
+    	m_clrRender: 0x5c 
+    	m_clrOverlay: 0x668 
+    	m_vDirection: 0x674 
+    	m_bOn: 0x680 
+    	m_nSize: 0x66c 
+    	m_nOverlaySize: 0x670 
+    	m_nMaterial: 0x684 
+    	m_nOverlayMaterial: 0x688 
+    	HDRColorScale: 0x0 
+     
+    CTeam - 106 
+    DT_Team 
+    	m_iTeamNum: 0x560 
+    	m_iScore: 0x54c 
+    	m_iRoundsWon: 0x550 
+    	m_szTeamname: 0x52c 
+    	player_array_element: 0x0 
+    	"player_array": 0x0 
+     
+    CTeamplayRoundBasedRulesProxy - 107 
+    DT_TeamplayRoundBasedRulesProxy 
+    	baseclass: 0x0 
+    	teamplayroundbased_gamerules_data: 0x0 
+    	m_iRoundState: 0x30 
+    	m_bInWaitingForPlayers: 0x40 
+    	m_iWinningTeam: 0x38 
+    	m_bInOvertime: 0x34 
+    	m_bInSetup: 0x35 
+    	m_bSwitchedTeamsThisRound: 0x36 
+    	m_bAwaitingReadyRestart: 0x41 
+    	m_flRestartRoundTime: 0x44 
+    	m_flMapResetTime: 0x48 
+    	m_flNextRespawnWave: 0x4c 
+    	m_TeamRespawnWaveTimes: 0x130 
+    	m_bTeamReady: 0xcc 
+    	m_bStopWatch: 0xec 
+    	m_bMultipleTrains: 0xed 
+    	m_bPlayerReady: 0xee 
+    	m_bCheatsEnabledDuringLevel: 0x12f 
+     
+    CTEArmorRicochet - 108 
+    DT_TEArmorRicochet 
+    	baseclass: 0x0 
+    	m_vecPos: 0x10 
+    	m_vecDir: 0x1c 
+     
+    CTEBaseBeam - 109 
+    DT_BaseBeam 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+     
+    CTEBeamEntPoint - 110 
+    DT_TEBeamEntPoint 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_nStartEntity: 0x4c 
+    	m_nEndEntity: 0x50 
+    	m_vecStartPoint: 0x54 
+    	m_vecEndPoint: 0x60 
+     
+    CTEBeamEnts - 111 
+    DT_TEBeamEnts 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_nStartEntity: 0x4c 
+    	m_nEndEntity: 0x50 
+     
+    CTEBeamFollow - 112 
+    DT_TEBeamFollow 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_iEntIndex: 0x4c 
+     
+    CTEBeamLaser - 113 
+    DT_TEBeamLaser 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_nStartEntity: 0x4c 
+    	m_nEndEntity: 0x50 
+     
+    CTEBeamPoints - 114 
+    DT_TEBeamPoints 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_vecStartPoint: 0x4c 
+    	m_vecEndPoint: 0x58 
+     
+    CTEBeamRing - 115 
+    DT_TEBeamRing 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_nStartEntity: 0x4c 
+    	m_nEndEntity: 0x50 
+     
+    CTEBeamRingPoint - 116 
+    DT_TEBeamRingPoint 
+    	baseclass: 0x0 
+    	m_nModelIndex: 0x10 
+    	m_nHaloIndex: 0x14 
+    	m_nStartFrame: 0x18 
+    	m_nFrameRate: 0x1c 
+    	m_fLife: 0x20 
+    	m_fWidth: 0x24 
+    	m_fEndWidth: 0x28 
+    	m_nFadeLength: 0x2c 
+    	m_fAmplitude: 0x30 
+    	m_nSpeed: 0x44 
+    	r: 0x34 
+    	g: 0x38 
+    	b: 0x3c 
+    	a: 0x40 
+    	m_nFlags: 0x48 
+    	m_vecCenter: 0x4c 
+    	m_flStartRadius: 0x58 
+    	m_flEndRadius: 0x5c 
+     
+    CTEBeamSpline - 117 
+    DT_TEBeamSpline 
+    	m_nPoints: 0xd0 
+    	m_vecPoints[0]: 0x10 
+    	m_vecPoints: 0x0 
+     
+    CTEBloodSprite - 118 
+    DT_TEBloodSprite 
+    	m_vecOrigin: 0x10 
+    	m_vecDirection: 0x1c 
+    	r: 0x28 
+    	g: 0x2c 
+    	b: 0x30 
+    	a: 0x34 
+    	m_nSprayModel: 0x3c 
+    	m_nDropModel: 0x38 
+    	m_nSize: 0x40 
+     
+    CTEBloodStream - 119 
+    DT_TEBloodStream 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_vecDirection: 0x1c 
+    	r: 0x28 
+    	g: 0x2c 
+    	b: 0x30 
+    	a: 0x34 
+    	m_nAmount: 0x38 
+     
+    CTEBreakModel - 120 
+    DT_TEBreakModel 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_angRotation[0]: 0x1c 
+    	m_angRotation[1]: 0x20 
+    	m_angRotation[2]: 0x24 
+    	m_vecSize: 0x28 
+    	m_vecVelocity: 0x34 
+    	m_nModelIndex: 0x44 
+    	m_nRandomization: 0x40 
+    	m_nCount: 0x48 
+    	m_fTime: 0x4c 
+    	m_nFlags: 0x50 
+     
+    CTEBSPDecal - 121 
+    DT_TEBSPDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_nEntity: 0x1c 
+    	m_nIndex: 0x20 
+     
+    CTEBubbles - 122 
+    DT_TEBubbles 
+    	baseclass: 0x0 
+    	m_vecMins: 0x10 
+    	m_vecMaxs: 0x1c 
+    	m_nModelIndex: 0x2c 
+    	m_fHeight: 0x28 
+    	m_nCount: 0x30 
+    	m_fSpeed: 0x34 
+     
+    CTEBubbleTrail - 123 
+    DT_TEBubbleTrail 
+    	baseclass: 0x0 
+    	m_vecMins: 0x10 
+    	m_vecMaxs: 0x1c 
+    	m_nModelIndex: 0x2c 
+    	m_flWaterZ: 0x28 
+    	m_nCount: 0x30 
+    	m_fSpeed: 0x34 
+     
+    CTEClientProjectile - 124 
+    DT_TEClientProjectile 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecVelocity: 0x1c 
+    	m_nModelIndex: 0x28 
+    	m_nLifeTime: 0x2c 
+    	m_hOwner: 0x30 
+     
+    CTEDecal - 125 
+    DT_TEDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecStart: 0x1c 
+    	m_nEntity: 0x28 
+    	m_nHitbox: 0x2c 
+    	m_nIndex: 0x30 
+     
+    CTEDust - 126 
+    DT_TEDust 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_flSize: 0x1c 
+    	m_flSpeed: 0x20 
+    	m_vecDirection: 0x24 
+     
+    CTEDynamicLight - 127 
+    DT_TEDynamicLight 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	r: 0x20 
+    	g: 0x24 
+    	b: 0x28 
+    	exponent: 0x2c 
+    	m_fRadius: 0x1c 
+    	m_fTime: 0x30 
+    	m_fDecay: 0x34 
+     
+    CTEEffectDispatch - 128 
+    DT_TEEffectDispatch 
+    	baseclass: 0x0 
+    	m_EffectData: 0x10 
+    	m_vOrigin[0]: 0x0 
+    	m_vOrigin[1]: 0x4 
+    	m_vOrigin[2]: 0x8 
+    	m_vStart[0]: 0xc 
+    	m_vStart[1]: 0x10 
+    	m_vStart[2]: 0x14 
+    	m_vAngles: 0x24 
+    	m_vNormal: 0x18 
+    	m_fFlags: 0x30 
+    	m_flMagnitude: 0x3c 
+    	m_flScale: 0x38 
+    	m_nAttachmentIndex: 0x44 
+    	m_nSurfaceProp: 0x48 
+    	m_iEffectName: 0x88 
+    	m_nMaterial: 0x4c 
+    	m_nDamageType: 0x50 
+    	m_nHitBox: 0x54 
+    	entindex: 0x0 
+    	m_nColor: 0x58 
+    	m_flRadius: 0x40 
+    	m_bCustomColors: 0x59 
+    	m_CustomColors.m_vecColor1: 0x5c 
+    	m_CustomColors.m_vecColor2: 0x68 
+    	m_bControlPoint1: 0x74 
+    	m_ControlPoint1.m_eParticleAttachment: 0x78 
+    	m_ControlPoint1.m_vecOffset[0]: 0x7c 
+    	m_ControlPoint1.m_vecOffset[1]: 0x80 
+    	m_ControlPoint1.m_vecOffset[2]: 0x84 
+     
+    CTEEnergySplash - 129 
+    DT_TEEnergySplash 
+    	m_vecPos: 0x10 
+    	m_vecDir: 0x1c 
+    	m_bExplosive: 0x28 
+     
+    CTEExplosion - 130 
+    DT_TEExplosion 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_nModelIndex: 0x1c 
+    	m_fScale: 0x20 
+    	m_nFrameRate: 0x24 
+    	m_nFlags: 0x28 
+    	m_vecNormal: 0x2c 
+    	m_chMaterialType: 0x38 
+    	m_nRadius: 0x3c 
+    	m_nMagnitude: 0x40 
+     
+    CTEFireBullets - 131 
+    DT_TEFireBullets 
+    	m_vecOrigin: 0x14 
+    	m_vecAngles[0]: 0x20 
+    	m_vecAngles[1]: 0x24 
+    	m_iWeaponID: 0x2c 
+    	m_iMode: 0x30 
+    	m_iSeed: 0x34 
+    	m_iPlayer: 0x10 
+    	m_fInaccuracy: 0x38 
+    	m_fSpread: 0x3c 
+     
+    CTEFizz - 132 
+    DT_TEFizz 
+    	baseclass: 0x0 
+    	m_nEntity: 0x10 
+    	m_nModelIndex: 0x14 
+    	m_nDensity: 0x18 
+    	m_nCurrent: 0x1c 
+     
+    CTEFootprintDecal - 133 
+    DT_TEFootprintDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecDirection: 0x1c 
+    	m_nEntity: 0x34 
+    	m_nIndex: 0x38 
+    	m_chMaterialType: 0x3c 
+     
+    CTEGaussExplosion - 134 
+    DT_TEGaussExplosion 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_nType: 0x1c 
+    	m_vecDirection: 0x20 
+     
+    CTEGlowSprite - 135 
+    DT_TEGlowSprite 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_nModelIndex: 0x1c 
+    	m_fScale: 0x20 
+    	m_fLife: 0x24 
+    	m_nBrightness: 0x28 
+     
+    CTEImpact - 136 
+    DT_TEImpact 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecNormal: 0x1c 
+    	m_iType: 0x28 
+    	m_ucFlags: 0x2c 
+     
+    CTEKillPlayerAttachments - 137 
+    DT_TEKillPlayerAttachments 
+    	baseclass: 0x0 
+    	m_nPlayer: 0x10 
+     
+    CTELargeFunnel - 138 
+    DT_TELargeFunnel 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_nModelIndex: 0x1c 
+    	m_nReversed: 0x20 
+     
+    CTEMetalSparks - 139 
+    DT_TEMetalSparks 
+    	m_vecPos: 0x10 
+    	m_vecDir: 0x1c 
+     
+    CTEMuzzleFlash - 140 
+    DT_TEMuzzleFlash 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecAngles: 0x1c 
+    	m_flScale: 0x28 
+    	m_nType: 0x2c 
+     
+    CTEParticleSystem - 141 
+    DT_TEParticleSystem 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+     
+    CTEPhysicsProp - 142 
+    DT_TEPhysicsProp 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_angRotation[0]: 0x1c 
+    	m_angRotation[1]: 0x20 
+    	m_angRotation[2]: 0x24 
+    	m_vecVelocity: 0x28 
+    	m_nModelIndex: 0x34 
+    	m_nFlags: 0x3c 
+    	m_nSkin: 0x38 
+    	m_nEffects: 0x40 
+     
+    CTEPlantBomb - 143 
+    DT_TEPlantBomb 
+    	m_vecOrigin: 0x14 
+    	m_iPlayer: 0x10 
+    	m_option: 0x20 
+     
+    CTEPlayerAnimEvent - 144 
+    DT_TEPlayerAnimEvent 
+    	m_hPlayer: 0x10 
+    	m_iEvent: 0x14 
+    	m_nData: 0x18 
+     
+    CTEPlayerDecal - 145 
+    DT_TEPlayerDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x14 
+    	m_nEntity: 0x20 
+    	m_nPlayer: 0x10 
+     
+    CTEProjectedDecal - 146 
+    DT_TEProjectedDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_angRotation: 0x1c 
+    	m_flDistance: 0x28 
+    	m_nIndex: 0x2c 
+     
+    CTERadioIcon - 147 
+    DT_TERadioIcon 
+    	baseclass: 0x0 
+    	m_iAttachToClient: 0x10 
+     
+    CTEShatterSurface - 148 
+    DT_TEShatterSurface 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecAngles: 0x1c 
+    	m_vecForce: 0x28 
+    	m_vecForcePos: 0x34 
+    	m_flWidth: 0x40 
+    	m_flHeight: 0x44 
+    	m_flShardSize: 0x48 
+    	m_nSurfaceType: 0x50 
+    	m_uchFrontColor[0]: 0x54 
+    	m_uchFrontColor[1]: 0x55 
+    	m_uchFrontColor[2]: 0x56 
+    	m_uchBackColor[0]: 0x57 
+    	m_uchBackColor[1]: 0x58 
+    	m_uchBackColor[2]: 0x59 
+     
+    CTEShowLine - 149 
+    DT_TEShowLine 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_vecEnd: 0x1c 
+     
+    CTesla - 150 
+    DT_Tesla 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_SoundName: 0x540 
+    	m_iszSpriteName: 0x580 
+     
+    CTESmoke - 151 
+    DT_TESmoke 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_nModelIndex: 0x1c 
+    	m_fScale: 0x20 
+    	m_nFrameRate: 0x24 
+     
+    CTESparks - 152 
+    DT_TESparks 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_vecOrigin[0]: 0x10 
+    	m_vecOrigin[1]: 0x14 
+    	m_vecOrigin[2]: 0x18 
+    	m_nMagnitude: 0x1c 
+    	m_nTrailLength: 0x20 
+    	m_vecDir: 0x24 
+     
+    CTESprite - 153 
+    DT_TESprite 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_nModelIndex: 0x1c 
+    	m_fScale: 0x20 
+    	m_nBrightness: 0x24 
+     
+    CTESpriteSpray - 154 
+    DT_TESpriteSpray 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_vecDirection: 0x1c 
+    	m_nModelIndex: 0x28 
+    	m_fNoise: 0x30 
+    	m_nCount: 0x34 
+    	m_nSpeed: 0x2c 
+     
+    CTest_ProxyToggle_Networkable - 155 
+    DT_ProxyToggle 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	blah: 0x0 
+    	m_WithProxy: 0x518 
+     
+    CTestTraceline - 156 
+    DT_TestTraceline 
+    	m_clrRender: 0x5c 
+    	m_vecOrigin: 0x338 
+    	m_angRotation[0]: 0x344 
+    	m_angRotation[1]: 0x348 
+    	m_angRotation[2]: 0x34c 
+    	moveparent: 0x190 
+     
+    CTEWorldDecal - 157 
+    DT_TEWorldDecal 
+    	baseclass: 0x0 
+    	m_vecOrigin: 0x10 
+    	m_nIndex: 0x1c 
+     
+    CVGuiScreen - 158 
+    DT_VGuiScreen 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flWidth: 0x520 
+    	m_flHeight: 0x524 
+    	m_fScreenFlags: 0x54c 
+    	m_nPanelName: 0x528 
+    	m_nAttachmentIndex: 0x544 
+    	m_nOverlayMaterial: 0x548 
+    	m_hPlayerOwner: 0x5a8 
+     
+    CVoteController - 159 
+    DT_VoteController 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_iActiveIssueIndex: 0x520 
+    	m_iOnlyTeamToVote: 0x524 
+    	m_nVoteOptionCount: 0x528 
+    	m_nPotentialVotes: 0x540 
+    	m_bIsYesNoVote: 0x546 
+     
+    CWaterBullet - 160 
+    DT_WaterBullet 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_nSequence: 0x7c0 
+    	m_nForceBone: 0x560 
+    	m_vecForce: 0x554 
+    	m_nSkin: 0x520 
+    	m_nBody: 0x524 
+    	m_nHitboxSet: 0x528 
+    	m_flModelScale: 0x620 
+    	m_flModelWidthScale: 0x620 
+    	m_flPoseParameter: 0x624 
+    	m_flPlaybackRate: 0x548 
+    	m_flEncodedController: 0x740 
+    	m_bClientSideAnimation: 0x790 
+    	m_bClientSideFrameReset: 0x590 
+    	m_nNewSequenceParity: 0x794 
+    	m_nResetEventsParity: 0x798 
+    	m_nMuzzleFlashParity: 0x84c 
+    	m_hLightingOrigin: 0x844 
+    	m_hLightingOriginRelative: 0x848 
+    	serveranimdata: 0x0 
+    	m_fadeMinDist: 0x5c8 
+    	m_fadeMaxDist: 0x5cc 
+    	m_flFadeScale: 0x5d0 
+     
+    CWaterLODControl - 161 
+    DT_WaterLODControl 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flCheapWaterStartDistance: 0x518 
+    	m_flCheapWaterEndDistance: 0x51c 
+     
+    CWeaponAug - 162 
+    DT_WeaponAug 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponAWP - 163 
+    DT_WeaponAWP 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponCSBase - 164 
+    DT_WeaponCSBase 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	LocalWeaponData: 0x0 
+    	LocalActiveWeaponData: 0x0 
+    	m_iViewModelIndex: 0x888 
+    	m_iWorldModelIndex: 0x88c 
+    	m_iState: 0x8ac 
+    	m_hOwner: 0x870 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CWeaponCSBaseGun - 165 
+    DT_WeaponCSBaseGun 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CWeaponCycler - 166 
+    DT_WeaponCycler 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	LocalWeaponData: 0x0 
+    	LocalActiveWeaponData: 0x0 
+    	m_iViewModelIndex: 0x888 
+    	m_iWorldModelIndex: 0x88c 
+    	m_iState: 0x8ac 
+    	m_hOwner: 0x870 
+     
+    CWeaponElite - 167 
+    DT_WeaponElite 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CWeaponFamas - 168 
+    DT_WeaponFamas 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_bBurstMode: 0x970 
+    	m_iBurstShotsRemaining: 0x974 
+     
+    CWeaponFiveSeven - 169 
+    DT_WeaponFiveSeven 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CWeaponG3SG1 - 170 
+    DT_WeaponG3SG1 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponGalil - 171 
+    DT_WeaponGalil 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponGlock - 172 
+    DT_WeaponGlock 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_bBurstMode: 0x968 
+    	m_iBurstShotsRemaining: 0x96c 
+     
+    CWeaponM249 - 173 
+    DT_WeaponM249 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponM3 - 174 
+    DT_WeaponM3 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_reloadState: 0x96c 
+     
+    CWeaponM4A1 - 175 
+    DT_WeaponM4A1 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_bSilencerOn: 0x970 
+    	m_flDoneSwitchingSilencer: 0x974 
+     
+    CWeaponMAC10 - 176 
+    DT_WeaponMAC10 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponMP5Navy - 177 
+    DT_WeaponMP5Navy 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponP228 - 178 
+    DT_WeaponP228 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+     
+    CWeaponP90 - 179 
+    DT_WeaponP90 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponScout - 180 
+    DT_WeaponScout 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponSG550 - 181 
+    DT_WeaponSG550 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponSG552 - 182 
+    DT_WeaponSG552 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponTMP - 183 
+    DT_WeaponTMP 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponUMP45 - 184 
+    DT_WeaponUMP45 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    CWeaponUSP - 185 
+    DT_WeaponUSP 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_bSilencerOn: 0x968 
+    	m_flDoneSwitchingSilencer: 0x96c 
+     
+    CWeaponXM1014 - 186 
+    DT_WeaponXM1014 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_weaponMode: 0x92c 
+    	m_fAccuracyPenalty: 0x930 
+    	m_reloadState: 0x96c 
+     
+    CWorld - 187 
+    DT_World 
+    	baseclass: 0x0 
+    	AnimTimeMustBeFirst: 0x0 
+    	m_flSimulationTime: 0x6c 
+    	m_ubInterpolationFrame: 0x78 
+    	m_vecOrigin: 0x338 
+    	m_angRotation: 0x344 
+    	m_nModelIndex: 0x90 
+    	m_fEffects: 0x7c 
+    	m_nRenderMode: 0x80 
+    	m_nRenderFX: 0x58 
+    	m_clrRender: 0x5c 
+    	m_iTeamNum: 0x9c 
+    	m_CollisionGroup: 0x354 
+    	m_flElasticity: 0x248 
+    	m_flShadowCastDistance: 0x24c 
+    	m_hOwnerEntity: 0x4d8 
+    	m_hEffectEntity: 0x4dc 
+    	moveparent: 0x190 
+    	m_iParentAttachment: 0x17a 
+    	movetype: 0x0 
+    	movecollide: 0x0 
+    	m_Collision: 0x19c 
+    	m_iTextureFrameIndex: 0x4cc 
+    	predictable_id: 0x0 
+    	m_bSimulatedEveryTick: 0x4c9 
+    	m_bAnimatedEveryTick: 0x4ca 
+    	m_bAlternateSorting: 0x4cb 
+    	m_flWaveHeight: 0x518 
+    	m_WorldMins: 0x51c 
+    	m_WorldMaxs: 0x528 
+    	m_bStartDark: 0x534 
+    	m_flMaxOccludeeArea: 0x538 
+    	m_flMinOccluderArea: 0x53c 
+    	m_flMaxPropScreenSpaceWidth: 0x544 
+    	m_flMinPropScreenSpaceWidth: 0x540 
+    	m_iszDetailSpriteMaterial: 0x549 
+    	m_bColdWorld: 0x548 
+     
+    DustTrail - 188 
+    DT_DustTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_SpawnRate: 0x604 
+    	m_Color: 0x608 
+    	m_ParticleLifetime: 0x618 
+    	m_StopEmitTime: 0x620 
+    	m_MinSpeed: 0x624 
+    	m_MaxSpeed: 0x628 
+    	m_MinDirectedSpeed: 0x62c 
+    	m_MaxDirectedSpeed: 0x630 
+    	m_StartSize: 0x634 
+    	m_EndSize: 0x638 
+    	m_SpawnRadius: 0x63c 
+    	m_bEmit: 0x64c 
+    	m_Opacity: 0x614 
+     
+    MovieExplosion - 189 
+    DT_MovieExplosion 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+     
+    NextBotCombatCharacter - 190 
+    DT_NextBot 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	bcc_localdata: 0x0 
+    	m_hActiveWeapon: 0xd80 
+    	m_hMyWeapons: 0xcc0 
+     
+    ParticleSmokeGrenade - 191 
+    DT_ParticleSmokeGrenade 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_flSpawnTime: 0x614 
+    	m_FadeStartTime: 0x618 
+    	m_FadeEndTime: 0x61c 
+    	m_CurrentStage: 0x604 
+     
+    RocketTrail - 192 
+    DT_RocketTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_SpawnRate: 0x604 
+    	m_StartColor: 0x608 
+    	m_EndColor: 0x614 
+    	m_ParticleLifetime: 0x624 
+    	m_StopEmitTime: 0x628 
+    	m_MinSpeed: 0x62c 
+    	m_MaxSpeed: 0x630 
+    	m_StartSize: 0x634 
+    	m_EndSize: 0x638 
+    	m_SpawnRadius: 0x63c 
+    	m_bEmit: 0x64c 
+    	m_nAttachment: 0x650 
+    	m_Opacity: 0x620 
+    	m_bDamaged: 0x64d 
+    	m_flFlareScale: 0x660 
+     
+    SmokeTrail - 193 
+    DT_SmokeTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_SpawnRate: 0x604 
+    	m_StartColor: 0x608 
+    	m_EndColor: 0x614 
+    	m_ParticleLifetime: 0x624 
+    	m_StopEmitTime: 0x628 
+    	m_MinSpeed: 0x62c 
+    	m_MaxSpeed: 0x630 
+    	m_MinDirectedSpeed: 0x634 
+    	m_MaxDirectedSpeed: 0x638 
+    	m_StartSize: 0x63c 
+    	m_EndSize: 0x640 
+    	m_SpawnRadius: 0x644 
+    	m_bEmit: 0x654 
+    	m_nAttachment: 0x658 
+    	m_Opacity: 0x620 
+     
+    SporeExplosion - 194 
+    DT_SporeExplosion 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_flSpawnRate: 0x604 
+    	m_flParticleLifetime: 0x608 
+    	m_flStartSize: 0x60c 
+    	m_flEndSize: 0x610 
+    	m_flSpawnRadius: 0x614 
+    	m_bEmit: 0x61c 
+    	m_bDontRemove: 0x61d 
+     
+    SporeTrail - 195 
+    DT_SporeTrail 
+    	baseclass: 0x0 
+    	baseclass: 0x0 
+    	m_flSpawnRate: 0x60c 
+    	m_vecEndColor: 0x600 
+    	m_flParticleLifetime: 0x610 
+    	m_flStartSize: 0x614 
+    	m_flEndSize: 0x618 
+    	m_flSpawnRadius: 0x61c 
+    	m_bEmit: 0x62c
