@@ -11,9 +11,11 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Player State and Movement](#Player-State-and-Movement)
 - [Weapons](#weapons)
 - [Drawing](#drawing)
+- [Hooks](#Hooks)
 - [ImGui Interface](#imgui-interface)
 - [AutoWall Functions](#autowall-functions)
 - [Aimbot Functions](#aimbot-functions)
+- [Resolver Functions](#Resolver Functions)
 - [Extended Player Functions](#extended-player-functions)
 - [LagComp Functions](#lagcomp-functions)
 - [Ray Tracing](#ray-tracing)
@@ -324,6 +326,26 @@ Draws a hitbox of the specified entity.
 ### draw_skeleton(entity_index, r, g, b, a) -> success
 Draws a skeleton of the specified entity.
 
+## Hooks
+
+### hook_vmt(interface_name_or_address, index, new_function) -> success
+Hooks a virtual method table function. Returns true if successful.
+
+### unhook_vmt(interface_name_or_address, index) -> success
+Unhooks a virtual method table function. Returns true if successful.
+
+### get_original_vmt(interface_name_or_address, index) -> original_function
+Gets the original VMT function.
+
+### hook_netvar(table_name, prop_name, new_proxy) -> success
+Hooks a netvar proxy function. Returns true if successful.
+
+### unhook_netvar(table_name, prop_name) -> success
+Unhooks a netvar proxy function. Returns true if successful.
+
+### get_original_netvar(table_name, prop_name) -> original_function
+Gets the original netvar proxy function.
+
 ## ImGui Interface
 
 ### imgui_begin(title, flags) -> boolean
@@ -626,6 +648,20 @@ Checks visibility between two points considering the specified target.
 
 ### aimbot_get_hitbox_position(entity_index, hitbox_id) -> pos_x, pos_y, pos_z
 Returns the position of the specified entity's hitbox.
+
+## Resolver Functions
+
+### set_resolver_override(function)
+Sets a resolver override function.
+
+### get_resolver_side(player_index) -> side
+Gets the resolver side for a player.
+
+### set_resolver_side(player_index, side)
+Sets the resolver side for a player.
+
+### get_resolver_data(player_index) -> data_table
+Gets resolver data for a player.
 
 ## Extended Player Functions
 
