@@ -23,6 +23,7 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Vector Functions](#vector-functions)
 - [Time and Ticks](#time-and-ticks)
 - [Other Functions](#other-functions)
+- [Logging Functions](#Logging-Functions)
 
 ## Script Management
 
@@ -142,6 +143,132 @@ Returns a table of all available configuration variables.
 
 ### player:is_alive() -> boolean
 Checks if the player is alive.
+
+### player:get_velocity() -> x, y, z
+Returns the player's velocity vector.
+
+### player:get_bullets_fired() -> integer
+Returns the number of bullets fired by the player.
+
+### player:has_defuser() -> boolean
+Checks if the player has a defuser.
+
+### player:get_sequence_activity(sequence) -> integer
+Returns the activity of the specified sequence.
+
+### player:get_pose_parameter(index) -> number
+Returns the value of the pose parameter at the specified index.
+
+### player:set_pose_parameter(index, value)
+Sets the value of the pose parameter at the specified index.
+
+### player:get_anim_overlay(index) -> table
+Returns the animation layer at the specified index as a table with fields: sequence, cycle, weight, playback_rate.
+
+### player:get_num_anim_overlays() -> integer
+Returns the number of animation layers.
+
+### player:get_observer_target() -> player
+Returns the player that the local player is observing.
+
+### player:get_observer_mode() -> integer
+Returns the observer mode.
+
+### player:get_max_health() -> integer
+Returns the maximum health of the player.
+
+### player:is_dying() -> boolean
+Checks if the player is dying.
+
+### player:get_velocity_modifier() -> number
+Returns the velocity modifier.
+
+### player:get_cycle() -> number
+Returns the cycle of the current animation.
+
+### player:set_cycle(cycle)
+Sets the cycle of the current animation.
+
+### player:get_sequence() -> integer
+Returns the current sequence.
+
+### player:set_sequence(sequence)
+Sets the current sequence.
+
+### player:get_playback_rate() -> number
+Returns the playback rate.
+
+### player:get_max_health_value() -> integer
+Returns the maximum health value.
+
+### player:get_max_speed() -> number
+Returns the maximum speed.
+
+### player:get_water_level() -> integer
+Returns the water level.
+
+### player:is_ducked() -> boolean
+Checks if the player is ducked.
+
+### player:in_duck_jump() -> boolean
+Checks if the player is in a duck jump.
+
+### player:get_duck_time() -> number
+Returns the duck time.
+
+### player:get_jump_time() -> number
+Returns the jump time.
+
+### player:get_duck_jump_time() -> number
+Returns the duck jump time.
+
+### player:get_collision_group() -> integer
+Returns the collision group.
+
+### player:get_punch_angle_vel() -> x, y, z
+Returns the punch angle velocity.
+
+### player:invalidate_bone_cache()
+Invalidates the bone cache.
+
+### player:set_abs_origin(x, y, z)
+Sets the absolute origin.
+
+### player:set_abs_angles(x, y, z)
+Sets the absolute angles.
+
+### player:set_local_origin(x, y, z)
+Sets the local origin.
+
+### player:set_local_angles(x, y, z)
+Sets the local angles.
+
+### player:lookup_pose_parameter(name) -> integer
+Looks up the pose parameter by name and returns its index.
+
+### player:weapon_get_slot(slot) -> weapon
+Returns the weapon in the specified slot.
+
+### player:is_scoped() -> boolean
+Checks if the player is scoped.
+
+### player:get_render_color() -> r, g, b, a
+Returns the render color.
+
+### player:is_ducking() -> boolean
+Checks if the player is ducking.
+
+### player:is_in_air() -> boolean
+Checks if the player is in the air.
+
+### player:is_spawn_protected() -> boolean
+Checks if the player is spawn protected.
+
+### player:get_account() -> integer
+Returns the player's account money.
+
+### player:get_bonus_progress() -> integer
+Returns the bonus progress.
 
 ### player:is_dormant() -> boolean
 Checks if the player is dormant.
@@ -799,6 +926,23 @@ Returns the double tap charge.
 
 ### get_ticks_to_shift() -> integer
 Returns the number of ticks until shift.
+
+## Logging Functions
+
+### log_message(message)
+Outputs a message to the console.
+
+### log_warning(message)
+Outputs a warning message to the console.
+
+### log_error(message)
+Outputs an error message to the console.
+
+### set_log_filter(filter)
+Sets the log filter.
+
+### get_log_filter() -> string
+Returns the current log filter.
 
 ## Usage Examples
 
