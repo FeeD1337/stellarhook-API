@@ -15,7 +15,7 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [ImGui Interface](#imgui-interface)
 - [AutoWall Functions](#autowall-functions)
 - [Aimbot Functions](#aimbot-functions)
-- [Resolver Functions](#Resolver Functions)
+- [Resolver Functions](#Resolver-Functions)
 - [Extended Player Functions](#extended-player-functions)
 - [LagComp Functions](#lagcomp-functions)
 - [Ray Tracing](#ray-tracing)
