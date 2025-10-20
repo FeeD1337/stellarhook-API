@@ -11,9 +11,11 @@ This is documentation for the StellarHook Lua API, which allows you to interact 
 - [Player State and Movement](#Player-State-and-Movement)
 - [Weapons](#weapons)
 - [Drawing](#drawing)
+- [Hooks](#Hooks)
 - [ImGui Interface](#imgui-interface)
 - [AutoWall Functions](#autowall-functions)
 - [Aimbot Functions](#aimbot-functions)
+- [Resolver Functions](#Resolver Functions)
 - [Extended Player Functions](#extended-player-functions)
 - [LagComp Functions](#lagcomp-functions)
 - [Ray Tracing](#ray-tracing)
@@ -177,6 +179,9 @@ Returns a player object by index.
 ### player:get_name() -> string
 Returns the player's name.
 
+### get_time() -> current_time
+Gets the current game time.
+
 ### player:get_team() -> integer
 Returns the player's team number.
 
@@ -324,6 +329,32 @@ Draws a hitbox of the specified entity.
 ### draw_skeleton(entity_index, r, g, b, a) -> success
 Draws a skeleton of the specified entity.
 
+## Hooks
+
+### hook_vmt(interface_name_or_address, index, new_function) -> success
+Hooks a virtual method table function. Returns true if successful.
+
+### unhook_vmt(interface_name_or_address, index) -> success
+Unhooks a virtual method table function. Returns true if successful.
+
+### get_original_vmt(interface_name_or_address, index) -> original_function
+Gets the original VMT function.
+
+### hook_netvar(table_name, prop_name, new_proxy) -> success
+Hooks a netvar proxy function. Returns true if successful.
+
+### unhook_netvar(table_name, prop_name) -> success
+Unhooks a netvar proxy function. Returns true if successful.
+
+### get_original_netvar(table_name, prop_name) -> original_function
+Gets the original netvar proxy function.
+
+### pattern_scan(module_name, signature) -> address
+Scans for a pattern in memory.
+
+### get_module_base(module_name) -> address
+Gets the base address of a module.
+
 ## ImGui Interface
 
 ### imgui_begin(title, flags) -> boolean
@@ -404,6 +435,210 @@ Adds a text input field in ImGui.
 ### imgui_get_async_key_state(vk_code) -> boolean
 Checks the state of a key.
 
+### imgui_push_style_var(idx, val)
+Pushes a style variable onto the stack.
+
+### imgui_pop_style_var(count)
+Pops style variables from the stack.
+
+### imgui_push_style_color(idx, r, g, b, a)
+Pushes a style color onto the stack.
+
+### imgui_pop_style_color(count)
+Pops style colors from the stack.
+
+### imgui_set_style_var(idx, val)
+Sets a style variable directly.
+
+### imgui_set_style_color(idx, r, g, b, a)
+Sets a style color directly.
+
+### imgui_set_window_font_scale(scale)
+Sets the font scale for the current window.
+
+### imgui_set_cursor_pos(x, y)
+Sets the cursor position within the current window.
+
+### imgui_get_window_size() -> width, height
+Gets the current window size.
+
+### imgui_get_window_pos() -> x, y
+Gets the current window position.
+
+### imgui_is_item_hovered() -> hovered
+Returns true if the last item is hovered.
+
+### imgui_is_item_clicked() -> clicked
+Returns true if the last item was clicked.
+
+### imgui_v_slider_float(label, width, height, value, min, max, format) -> value, changed
+Adds a vertical slider for float values.
+
+### imgui_v_slider_int(label, width, height, value, min, max, format) -> value, changed
+Adds a vertical slider for integer values.
+
+### imgui_input_text(label, default_text, buf_size) -> changed, text
+Adds a text input field in ImGui.
+
+### imgui_input_float(label, value, step, step_fast, format) -> value, changed
+Adds an input field for float values.
+
+### imgui_input_int(label, value, step, step_fast) -> value, changed
+Adds an input field for integer values.
+
+### imgui_tree_node(label) -> open
+Creates a tree node that can be expanded.
+
+### imgui_tree_push(id)
+Pushes tree node state.
+
+### imgui_tree_pop()
+Pops tree node state.
+
+### imgui_progress_bar(fraction, width, height, overlay)
+Adds a progress bar.
+
+### imgui_dummy(width, height)
+Adds a dummy element for spacing.
+
+### imgui_spacing()
+Adds vertical spacing.
+
+### imgui_new_line()
+Adds a new line.
+
+### imgui_plot_lines(label, values_table, overlay, min, max, width, height)
+Plots an array of values as lines.
+
+### imgui_plot_histogram(label, values_table, overlay, min, max, width, height)
+Plots an array of values as a histogram.
+
+### imgui_radio_button(label, active) -> clicked
+Adds a radio button.
+
+### imgui_selectable(label, selected) -> selected, clicked
+Adds a selectable item.
+
+### imgui_collapsing_header(label) -> open
+Adds a collapsing header.
+
+### imgui_list_box(label, current, items_table) -> current, changed
+Adds a list box.
+
+### imgui_menu_bar() -> has_menu
+Starts a menu bar.
+
+### imgui_menu_item(label, selected) -> result, selected
+Adds a menu item.
+
+### imgui_checkbox_flags(label, flags, flag_value) -> flags, changed
+Adds a checkbox for bit flags.
+
+### imgui_drag_float(label, value, speed, min, max, format) -> value, changed
+Adds a draggable float control.
+
+### imgui_drag_int(label, value, speed, min, max, format) -> value, changed
+Adds a draggable integer control.
+
+### imgui_color_edit3(label, r, g, b) -> r, g, b, changed
+Adds a color editor for RGB values.
+
+### imgui_color_edit4(label, r, g, b, a) -> r, g, b, a, changed
+Adds a color editor for RGBA values.
+
+### imgui_image(texture_id, width, height)
+Displays an image.
+
+### imgui_image_button(texture_id, width, height) -> clicked
+Adds an image button.
+
+### imgui_begin_tab_bar(id) -> open
+Starts a tab bar.
+
+### imgui_end_tab_bar()
+Ends a tab bar.
+
+### imgui_begin_tab_item(name) -> open
+Starts a tab item.
+
+### imgui_end_tab_item()
+Ends a tab item.
+
+### imgui_begin_table(id, columns) -> open
+Starts a table.
+
+### imgui_end_table()
+Ends a table.
+
+### imgui_table_next_row(min_height)
+Moves to the next table row.
+
+### imgui_table_set_column_index(column_index) -> success
+Sets the current column index in a table.
+
+### imgui_table_setup_column(label, init_width)
+Sets up a table column.
+
+### imgui_tooltip(text)
+Adds a tooltip with the specified text.
+
+### imgui_begin_tooltip()
+Starts a tooltip window.
+
+### imgui_end_tooltip()
+Ends a tooltip window.
+
+### imgui_begin_popup(id) -> open
+Begins a popup window.
+
+### imgui_end_popup()
+Ends a popup window.
+
+### imgui_open_popup(id)
+Opens a popup by ID.
+
+### imgui_close_current_popup()
+Closes the currently open popup
+
+### imgui_is_popup_open(id) -> open
+Checks if a popup is currently open.
+
+### imgui_begin_main_menu_bar() -> has_menu
+Starts the main menu bar. Returns true if the menu bar is visible.
+
+### imgui_end_main_menu_bar()
+Ends the main menu bar.
+
+### imgui_begin_menu(label, enabled) -> open
+Starts a menu. Returns true if the menu is open.
+
+### imgui_end_menu()
+Ends a menu.
+
+### imgui_menu_item(label, selected) -> clicked, selected
+Adds a menu item. Returns whether it was clicked and its selected state.
+
+### imgui_begin_tab_item(name) -> open
+Starts a tab item. Returns true if the tab is open and active.
+
+### imgui_end_tab_item()
+Ends a tab item.
+
+### imgui_begin_tab_bar(id) -> open
+Starts a tab bar. Returns true if the tab bar is visible.
+
+### imgui_end_tab_bar()
+Ends a tab bar.
+
+### imgui_columns(count, id, border)
+Sets up columns in the current window.
+
+### imgui_next_column()
+Moves to the next column.
+
+### imgui_set_column_width(column_index, width)
+Sets the width of a specific column.
+
 ## AutoWall Functions
 
 ### autowall_can_hit(start_x, start_y, start_z, end_x, end_y, end_z, target_index) -> hit, damage
@@ -422,6 +657,20 @@ Checks visibility between two points considering the specified target.
 
 ### aimbot_get_hitbox_position(entity_index, hitbox_id) -> pos_x, pos_y, pos_z
 Returns the position of the specified entity's hitbox.
+
+## Resolver Functions
+
+### set_resolver_override(function)
+Sets a resolver override function.
+
+### get_resolver_side(player_index) -> side
+Gets the resolver side for a player.
+
+### set_resolver_side(player_index, side)
+Sets the resolver side for a player.
+
+### get_resolver_data(player_index) -> data_table
+Gets resolver data for a player.
 
 ## Extended Player Functions
 
