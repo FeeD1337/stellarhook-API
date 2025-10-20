@@ -179,6 +179,9 @@ Returns a player object by index.
 ### player:get_name() -> string
 Returns the player's name.
 
+### get_time() -> current_time
+Gets the current game time.
+
 ### player:get_team() -> integer
 Returns the player's team number.
 
@@ -345,6 +348,12 @@ Unhooks a netvar proxy function. Returns true if successful.
 
 ### get_original_netvar(table_name, prop_name) -> original_function
 Gets the original netvar proxy function.
+
+### pattern_scan(module_name, signature) -> address
+Scans for a pattern in memory.
+
+### get_module_base(module_name) -> address
+Gets the base address of a module.
 
 ## ImGui Interface
 
