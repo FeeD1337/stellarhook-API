@@ -141,6 +141,50 @@ Returns the color components of a configuration variable.
 ### list_cvars() -> table
 Returns a table of all available configuration variables.
 
+### find_convar(name)
+Finds a ConVar by name and returns a pointer to it.
+``` Lua
+local sv_cheats = find_convar("sv_cheats")
+if sv_cheats then
+    print("Found sv_cheats ConVar")
+end
+```
+
+### convar_get_int(convar_name)
+Gets the integer value of a ConVar.
+
+### convar_get_float(convar_name)
+Gets the float value of a ConVar.
+
+### convar_get_bool(convar_name)
+Gets the boolean value of a ConVar.
+
+### convar_set_int(convar_name, value)
+Sets the integer value of a ConVar.
+
+### convar_set_float(convar_name, value)
+Sets the float value of a ConVar.
+
+### convar_set_bool(convar_name, value)
+Sets the boolean value of a ConVar.
+
+### ConVar Control Example
+
+``` Lua
+function optimize_ticks()
+    convar_set_int("sv_maxusrcmdprocessticks", 16)
+    convar_set_int("sv_mincmdrate", 64)
+    convar_set_int("sv_minupdaterate", 64)
+    print("Ticks optimized")
+end
+
+function enable_cheats()
+    convar_set_bool("sv_cheats", true)
+    convar_set_bool("sv_ignoregrenaderadio", true)
+    print("Cheats enabled")
+end
+```
+
 ## Player Information
 
 ### player:is_alive() -> boolean
@@ -928,6 +972,18 @@ Returns the double tap charge.
 
 ### get_ticks_to_shift() -> integer
 Returns the number of ticks until shift.
+
+### set_doubletap_charge(charge)
+Sets the doubletap charge value.
+
+### reset_double_tap()
+Completely resets the doubletap system.
+
+### set_shifting(state)
+Sets the shifting state.
+
+### set_ticks_to_shift(ticks)
+Sets the number of ticks to shift.
 
 ## Logging Functions
 
