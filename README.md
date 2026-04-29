@@ -344,6 +344,10 @@ This documentation describes the Lua API for StellarHook
 - `animfix_on_getcurrentfeetyaw(callback)`
 - `animfix_on_getgoalfeetyaw(callback)`
 
+## GameEvent Functions
+- `register_event(event_name, callback)`
+- `unregister_event(event_name, callback_ref)`
+
 ## CallBack Functions
 - `framestagenotify(callback to FSN)`
 - `createmove(callback to CREATEMOVE)`
